@@ -129,7 +129,7 @@ public class WAccessMaintain extends ADForm implements EventListener<Event>, WTa
 		Row row = rows.newRow();
 
 		Hbox hb = new Hbox();
-		hb.appendChild(new Label("Type"));
+		hb.appendChild(new Label(Msg.getElement(m_ctx, "Type")));
 		hb.appendChild(fType);
 		hb.appendChild(fFilterObject.getComponent());
 		hb.appendChild(fCreatedFrom.getComponent());
@@ -146,7 +146,7 @@ public class WAccessMaintain extends ADForm implements EventListener<Event>, WTa
 		row = rows.newRow();
 		hb = new Hbox();
 		hb.appendChild(bSelect);
-		hb.appendChild(new Label("Action :"));
+		hb.appendChild(new Label(Msg.getElement(m_ctx, "Action")));
 		hb.appendChild(fActionType);
 		hb.appendChild(bProcess);
 		row.appendCellChild(hb, 2);
